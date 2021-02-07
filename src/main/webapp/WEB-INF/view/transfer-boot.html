@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BSB Transfers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+<section class="login p-8 border-top-1">
+    <div >
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8 align-item-center">
+                <div class="border">
+                    <h3 class="bg-gray p-4">Transfer money to card of another bank</h3>
+                    <p class="bg-gray p-4">cut 1% from the transfer amount</p>
+
+                    <form action="/anotherBank" method="post">
+                        <fieldset class="p-4">
+
+                            <input type="number" name="cardN1" placeholder="Your card number" class="border p-3 w-100 my-2">
+                            <input type="number" name="cardN2" placeholder="Users card number" class="border p-3 w-100 my-2">
+                            <input type="password" name="password" placeholder="Password" class="border p-3 w-100 my-2">
+
+                            <button type="submit" class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Transfer</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="login p-8 border-top-1">
+    <div >
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8 align-item-center">
+                <div class="border">
+                    <h3 class="bg-gray p-4">Transfer  money to card of this bank</h3>
+                    <p class="bg-gray p-4">cut 1% if the transfer amount exceeds 100 000 KZT</p>
+
+                    <form action="/anotherBank" method="post">
+                        <fieldset class="p-4">
+
+                            <input type="number" name="cardN1" placeholder="Your card number" class="border p-3 w-100 my-2">
+                            <input type="number" name="cardN2" placeholder="Users card number" class="border p-3 w-100 my-2">
+                            <input type="password" name="password" placeholder="Password" class="border p-3 w-100 my-2">
+
+                            <button type="submit" class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Transfer</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="login p-8 border-top-1">
+    <div>
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-8 align-item-center">
+                <div class="border">
+                    <h3 class="bg-gray p-4">Transfer between your accounts</h3>
+                    <p class="bg-gray p-4"></p>
+
+                    <form action="/anotherBank" method="post">
+                        <fieldset class="p-4">
+
+                            <input type="number" name="cardN1" placeholder="From..." class="border p-3 w-100 my-2">
+                            <input type="number" name="cardN2" placeholder="To..." class="border p-3 w-100 my-2">
+                            <input type="password" name="password" placeholder="Password" class="border p-3 w-100 my-2">
+
+                            <button type="submit" class="d-block py-3 px-5 bg-primary text-white border-0 rounded font-weight-bold mt-3">Submit</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
